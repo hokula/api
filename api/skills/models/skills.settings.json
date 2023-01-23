@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skills",
+  "info": {
+    "name": "Skill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "skillname": {
+      "type": "string"
+    },
+    "employee": {
+      "via": "skills",
+      "model": "employee"
+    },
+    "level": {
+      "type": "integer",
+      "required": false,
+      "default": 0,
+      "max": 5,
+      "min": 0
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

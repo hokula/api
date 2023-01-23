@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salary_slips",
+  "info": {
+    "name": "Salary Slip",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "employee": {
+      "via": "salary_slips",
+      "model": "employee"
+    },
+    "sentAt": {
+      "type": "datetime",
+      "required": false
+    },
+    "slip": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/calendar",
+      "handler": "calendar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/calendar",
+      "handler": "calendar.create",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

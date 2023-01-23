@@ -1,0 +1,131 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "manager": {
+      "model": "employee",
+      "via": "employees"
+    },
+    "employees": {
+      "collection": "employee",
+      "via": "manager"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "birthday": {
+      "type": "date",
+      "required": true
+    },
+    "joinedDate": {
+      "type": "date",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "yearsInCA": {
+      "type": "decimal",
+      "required": true
+    },
+    "emergency_contact": {
+      "model": "emergency-contact",
+      "via": "employee"
+    },
+    "user": {
+      "unique": true,
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "employee"
+    },
+    "dateLeft": {
+      "type": "date"
+    },
+    "salary": {
+      "model": "salary",
+      "via": "employee"
+    },
+    "vacationDays": {
+      "type": "integer",
+      "required": false,
+      "default": 20
+    },
+    "onVacation": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "salaryBonus": {
+      "model": "salary-bonus",
+      "via": "employee"
+    },
+    "usedVacationDays": {
+      "type": "integer",
+      "default": 0
+    },
+    "equipment_asset": {
+      "model": "equipment-assets",
+      "via": "employee"
+    },
+    "salary_slips": {
+      "collection": "salary-slip",
+      "via": "employee"
+    },
+    "skills": {
+      "collection": "skills",
+      "via": "employee"
+    },
+    "generalRank": {
+      "type": "string",
+      "required": false
+    },
+    "domain": {
+      "type": "string",
+      "required": false
+    },
+    "skillGroup": {
+      "type": "string"
+    },
+    "projects": {
+      "collection": "project",
+      "via": "employees"
+    },
+    "managing_projects": {
+      "collection": "project",
+      "via": "manager"
+    },
+    "conferences": {
+      "collection": "conferences",
+      "via": "employee"
+    },
+    "lastBonusReceived": {
+      "type": "string"
+    },
+    "vacation_requests": {
+      "via": "employee",
+      "collection": "vacation-request-test"
+    }
+  }
+}

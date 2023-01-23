@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipment_locations",
+  "info": {
+    "name": "Equipment Location"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "equipment_assets": {
+      "via": "location",
+      "collection": "equipment-assets"
+    }
+  }
+}

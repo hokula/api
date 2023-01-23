@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/equipment-locations",
+      "handler": "equipment-location.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/equipment-locations/count",
+      "handler": "equipment-location.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/equipment-locations/:id",
+      "handler": "equipment-location.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/equipment-locations",
+      "handler": "equipment-location.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/equipment-locations/:id",
+      "handler": "equipment-location.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/equipment-locations/:id",
+      "handler": "equipment-location.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

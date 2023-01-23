@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/salary-slips",
+      "handler": "salary-slip.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salary-slips/count",
+      "handler": "salary-slip.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salary-slips/:id",
+      "handler": "salary-slip.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/salary-slips",
+      "handler": "salary-slip.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/salary-slips/:id",
+      "handler": "salary-slip.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/salary-slips/:id",
+      "handler": "salary-slip.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

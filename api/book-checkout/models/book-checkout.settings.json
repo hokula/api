@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_checkouts",
+  "info": {
+    "name": "Book Checkout"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "dateBorrowed": {
+      "type": "date"
+    },
+    "dateReturned": {
+      "type": "date"
+    },
+    "book": {
+      "model": "book"
+    },
+    "employee": {
+      "model": "employee"
+    }
+  }
+}

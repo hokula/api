@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/equipment-suppliers",
+      "handler": "equipment-supplier.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/equipment-suppliers/count",
+      "handler": "equipment-supplier.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/equipment-suppliers/:id",
+      "handler": "equipment-supplier.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/equipment-suppliers",
+      "handler": "equipment-supplier.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/equipment-suppliers/:id",
+      "handler": "equipment-supplier.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/equipment-suppliers/:id",
+      "handler": "equipment-supplier.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

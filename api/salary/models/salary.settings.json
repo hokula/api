@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salaries",
+  "info": {
+    "name": "Salary"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "contractExpiry": {
+      "type": "date"
+    },
+    "lastContractLength": {
+      "type": "integer"
+    },
+    "suggestedNewContractLength": {
+      "type": "integer"
+    },
+    "lastRaiseDate": {
+      "type": "date"
+    },
+    "lastRaise": {
+      "type": "decimal"
+    },
+    "salary": {
+      "type": "decimal"
+    },
+    "suggestedRaise": {
+      "type": "decimal"
+    },
+    "final": {
+      "type": "decimal"
+    },
+    "amtInDollar": {
+      "type": "decimal"
+    },
+    "comments": {
+      "type": "text"
+    },
+    "employee": {
+      "via": "salary",
+      "model": "employee"
+    },
+    "salaryBumpHistory": {
+      "type": "decimal"
+    },
+    "salaryBonus": {
+      "via": "salary",
+      "model": "salary-bonus"
+    }
+  }
+}

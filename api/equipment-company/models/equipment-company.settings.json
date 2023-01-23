@@ -1,0 +1,16 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipment_companies",
+  "info": {
+    "name": "Equipment Company"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

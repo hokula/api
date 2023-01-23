@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "employees": {
+      "via": "projects",
+      "collection": "employee",
+      "dominant": true
+    },
+    "fte": {
+      "type": "biginteger"
+    },
+    "manager": {
+      "via": "managing_projects",
+      "model": "employee"
+    }
+  }
+}

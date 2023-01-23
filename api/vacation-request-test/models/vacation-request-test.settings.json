@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vacation_request_tests",
+  "info": {
+    "name": "Vacation Request"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "startDate": {
+      "type": "date"
+    },
+    "note": {
+      "type": "text"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "selectedLeader": {
+      "type": "string"
+    },
+    "employee": {
+      "model": "employee",
+      "via": "vacation_requests"
+    },
+    "createdBy": {
+      "type": "string"
+    }
+  }
+}

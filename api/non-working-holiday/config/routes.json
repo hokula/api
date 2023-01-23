@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/non-working-holidays",
+      "handler": "non-working-holiday.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/non-working-holidays/count",
+      "handler": "non-working-holiday.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/non-working-holidays/:id",
+      "handler": "non-working-holiday.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/non-working-holidays",
+      "handler": "non-working-holiday.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/non-working-holidays/:id",
+      "handler": "non-working-holiday.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/non-working-holidays/:id",
+      "handler": "non-working-holiday.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/book-checkouts",
+      "handler": "book-checkout.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/book-checkouts/count",
+      "handler": "book-checkout.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/book-checkouts/short",
+      "handler": "book-checkout.findShortBookCheckouts",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/book-checkouts/short/:id",
+      "handler": "book-checkout.findShortBookCheckout",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/book-checkouts/:id",
+      "handler": "book-checkout.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/book-checkouts",
+      "handler": "book-checkout.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/book-checkouts/short",
+      "handler": "book-checkout.createShortBookCheckout",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/book-checkouts/short/:id",
+      "handler": "book-checkout.updateShortBookCheckout",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/book-checkouts/:id",
+      "handler": "book-checkout.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/book-checkouts/:id",
+      "handler": "book-checkout.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

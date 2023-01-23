@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipment_assets",
+  "info": {
+    "name": "Equipment Assets"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "company": {
+      "type": "string"
+    },
+    "assetTag": {
+      "type": "string"
+    },
+    "model": {
+      "via": "equipment_assets",
+      "model": "equipment-model"
+    },
+    "serial": {
+      "type": "string"
+    },
+    "assetName": {
+      "type": "string"
+    },
+    "purchaseDate": {
+      "type": "date"
+    },
+    "supplier": {
+      "via": "equipment_assets",
+      "model": "equipment-supplier"
+    },
+    "orderNumber": {
+      "type": "string"
+    },
+    "purchaseCost": {
+      "type": "decimal"
+    },
+    "warranty": {
+      "type": "integer"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "employee": {
+      "via": "equipment_asset",
+      "model": "employee"
+    },
+    "status": {
+      "type": "string"
+    },
+    "location": {
+      "model": "equipment-location",
+      "via": "equipment_assets"
+    },
+    "checkoutDate": {
+      "type": "date"
+    },
+    "expectedChekinDate": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/salary-bonuses",
+      "handler": "salary-bonus.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salary-bonuses/count",
+      "handler": "salary-bonus.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salary-bonuses/:id",
+      "handler": "salary-bonus.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/salary-bonuses",
+      "handler": "salary-bonus.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/salary-bonuses/:id",
+      "handler": "salary-bonus.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/salary-bonuses/:id",
+      "handler": "salary-bonus.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

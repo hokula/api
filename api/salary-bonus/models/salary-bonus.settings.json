@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salary_bonuses",
+  "info": {
+    "name": "Salary Bonus",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "netBonus": {
+      "type": "decimal"
+    },
+    "amtInDollar": {
+      "type": "decimal"
+    },
+    "bonusType": {
+      "type": "string"
+    },
+    "salary": {
+      "model": "salary",
+      "via": "salaryBonus"
+    },
+    "employee": {
+      "via": "salaryBonus",
+      "model": "employee"
+    }
+  }
+}

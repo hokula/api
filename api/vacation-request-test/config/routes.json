@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vacation-request-tests",
+      "handler": "vacation-request-test.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vacation-request-tests/count",
+      "handler": "vacation-request-test.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vacation-request-tests/:id",
+      "handler": "vacation-request-test.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vacation-request-tests",
+      "handler": "vacation-request-test.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vacation-request-tests/:id",
+      "handler": "vacation-request-test.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vacation-request-tests/:id",
+      "handler": "vacation-request-test.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

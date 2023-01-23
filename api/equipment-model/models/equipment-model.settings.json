@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipment_models",
+  "info": {
+    "name": "Equipment Model"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "modelno": {
+      "type": "string"
+    },
+    "equipment_assets": {
+      "collection": "equipment-assets",
+      "via": "model"
+    }
+  }
+}

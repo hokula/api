@@ -1,0 +1,12 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_requests",
+  "info": {
+    "name": "Book Request"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {}
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conferences",
+  "info": {
+    "name": "conferences"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "employee": {
+      "via": "conferences",
+      "model": "employee"
+    },
+    "conferenceType": {
+      "type": "string"
+    },
+    "conferenceName": {
+      "type": "string"
+    },
+    "assignedBy": {
+      "model": "employee"
+    },
+    "certification": {
+      "type": "string"
+    },
+    "dateAttended": {
+      "type": "date"
+    }
+  }
+}

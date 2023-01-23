@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "referrals",
+  "info": {
+    "name": "Referral"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "employeeReferral": {
+      "model": "employee"
+    },
+    "trialEnds": {
+      "type": "date"
+    },
+    "bonusPaid": {
+      "type": "boolean"
+    },
+    "referralBonus": {
+      "type": "decimal"
+    },
+    "note": {
+      "type": "text"
+    }
+  }
+}

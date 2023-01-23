@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "non_working_holidays",
+  "info": {
+    "name": "Non-working Holiday"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "dateCelebrated": {
+      "type": "date",
+      "required": true,
+      "unique": false
+    },
+    "nonWorkingDayDate": {
+      "type": "date",
+      "required": true,
+      "unique": false
+    }
+  }
+}
